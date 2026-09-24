@@ -1,26 +1,26 @@
-﻿/* Cor do fundo e cor base do texto */
-body, .App, .layout-container {
+/* Cor do fundo e cor base do texto */
+body, .App, .MainLayout, .GroupView, .main-container {
     background-color: #4f2734 !important;
     color: #d4c3a7 !important;
 }
 
 /* Cor do Username e Rank */
-.player-name, .Username, .player-username {
+a.Player, .Player-name {
     color: #d8869c !important;
 }
-.player-rank, .Rank, .player-title {
+.Player-rank, .online, .offline, .provisional {
     color: #a2bc96 !important;
 }
 
 /* Botões */
-button, .btn, .Button {
+button, .btn, .btn-primary, .btn.primary {
     background-color: #40642e !important;
     border: 1px solid #2b5317 !important;
     color: #d4c3a7 !important;
 }
 
 /* Cards / Boxes com as seções da página */
-.well, .panel, .modal-content, .card, .group-panel {
+.well, .panel, .modal-content, .card, .GroupMain, .sidebar-panel, .MembersPanel {
     background-color: #222c23 !important;
     border: 1px solid #8e4c5d !important;
     border-radius: 5px !important;
@@ -32,7 +32,7 @@ a, a:hover, a:visited {
 }
 
 /* Banner Img (Capa do topo) */
-.group-cover-image, .group-header img, .banner-image {
+.GroupBanner, .group-banner, img.banner, .GroupAvatar {
     border-radius: 5px !important;
 }
 
