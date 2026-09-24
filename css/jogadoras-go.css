@@ -1,5 +1,5 @@
 /* Cor do fundo e cor base do texto */
-body, .App, .MainLayout, .GroupView, .main-container {
+html, body, [data-theme="dark"], [data-theme="light"], #main-content, .App, .MainLayout, .GroupView, .main-container {
     background-color: #4f2734 !important;
     color: #d4c3a7 !important;
 }
