@@ -1,6 +1,21 @@
-/* Cor do fundo e cor base do texto */
-html, body, [data-theme="dark"], [data-theme="light"], #main-content, .App, .MainLayout, .GroupView, .main-container {
-    background-color: #4f2734 !important;
+/* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
+:root, [data-theme="dark"], [data-theme="light"] {
+    --bg: #4f2734 !important;
+    --fg: #d4c3a7 !important;
+    --text-color: #d4c3a7 !important;
+    --shade1: #d4c3a7 !important;
+    --shade2: #d4c3a7 !important;
+    --colored-background-fg: #d4c3a7 !important;
+}
+
+/* Cor do fundo e cor base do texto (fallback caso a variável falhe em algum lugar) */
+html[data-theme="dark"], body[data-theme="dark"], html[data-theme="light"], body[data-theme="light"], #main-content, .App, .MainLayout, .GroupView, .Group, .main-container {
+    background-color: var(--bg, #4f2734) !important;
+    color: var(--fg, #d4c3a7) !important;
+}
+
+/* Forçar a cor do texto para elementos que não usam as variáveis globais */
+p, span, h1, h2, h3, h4, h5, h6, label, .title, .header {
     color: #d4c3a7 !important;
 }
 
