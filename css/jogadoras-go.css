@@ -32,13 +32,20 @@ a, a:hover, a:visited {
 }
 
 /* Banner Img (Capa do topo) */
-.group-cover-image,
-    .group-header img,
-    .banner-image,
-    .banner img {
+/* Banner container */
+.banner {
     border-radius: 5px !important;
     overflow: hidden;
-    display: block;
+}
+
+/* Imagem dentro do banner */
+.banner img,
+.group-cover-image,
+.group-header img,
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block; /* garante que a imagem ocupe toda a largura do container */
 }
 
 /* Customização da Scrollbar (Barra de rolagem) */
