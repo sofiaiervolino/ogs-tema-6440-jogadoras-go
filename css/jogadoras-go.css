@@ -46,22 +46,26 @@ a:visited {
     color: #8bbe71 !important;
 }
 
-/* Banner Img (Capa do topo) */
 /* Banner container */
 .banner {
+    display: block;
     border-radius: 5px !important;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
-/* Imagem dentro do banner */
+/* Image inside banner */
 .banner img,
+.banner>img,
 .group-cover-image,
 .group-header img,
 .banner-image {
     width: 100%;
     height: auto;
     display: block;
-    /* garante que a imagem ocupe toda a largura do container */
+    border-radius: 5px !important;
+    /* force radius on image */
+    clip-path: none !important;
+    /* remove any clip applied by OGS */
 }
 
 /* Customização da Scrollbar (Barra de rolagem) */
