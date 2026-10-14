@@ -1,53 +1,96 @@
-/* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
-:root, [data-theme="dark"], [data-theme="light"] {
+/* Variáveis Globais do OGS para forçar cores de fundo e texto em em modo escuro e claro. */
+:root,
+[data-theme="dark"],
+[data-theme="light"] {
     --bg: #4f2734 !important;
     --fg: #d4c3a7 !important;
     --text-color: #d4c3a7 !important;
     --shade1: #d4c3a7 !important;
     --shade2: #d4c3a7 !important;
     --colored-background-fg: #d4c3a7 !important;
+    --card-bg: #222c23 !important;
+    --card-border: #8e4c5d !important;
+    --card-radius: 5px !important;
 }
 
 /* Cor do fundo e cor base do texto (fallback caso a variável falhe em algum lugar) */
-html[data-theme="dark"], body[data-theme="dark"], html[data-theme="light"], body[data-theme="light"], #main-content, .App, .MainLayout, .GroupView, .Group, .main-container {
+html[data-theme="dark"],
+body[data-theme="dark"],
+html[data-theme="light"],
+body[data-theme="light"],
+#main-content,
+.App,
+.MainLayout,
+.GroupView,
+.Group,
+.main-container {
     background-color: var(--bg, #4f2734) !important;
     color: var(--fg, #d4c3a7) !important;
 }
 
 /* Forçar a cor do texto para elementos que não usam as variáveis globais */
-p, span, h1, h2, h3, h4, h5, h6, label, .title, .header {
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+.title,
+.header {
     color: #d4c3a7 !important;
 }
 
 /* Cor do Username e Rank */
-a.Player, .Player-name {
+a.Player,
+.Player-name {
     color: #d8869c !important;
 }
-.Player-rank, .online, .offline, .provisional {
+
+.Player-rank,
+.online,
+.offline,
+.provisional {
     color: #a2bc96 !important;
 }
 
 /* Botões */
-button, .btn, .btn-primary, .btn.primary {
+button,
+.btn,
+.btn-primary,
+.btn.primary {
     background-color: #40642e !important;
     border: 1px solid #2b5317 !important;
     color: #d4c3a7 !important;
 }
 
 /* Cards / Boxes com as seções da página */
-.well, .panel, .modal-content, .card, .GroupMain, .sidebar-panel, .MembersPanel {
-    background-color: #222c23 !important;
-    border: 1px solid #8e4c5d !important;
-    border-radius: 5px !important;
+.well,
+.panel,
+.modal-content,
+.card,
+.GroupMain,
+.sidebar-panel,
+.MembersPanel {
+    background-color: var(--card-bg, #222c23) !important;
+    border: 1px solid var(--card-border, #8e4c5d) !important;
+    border-radius: var(--card-radius, 5px) !important;
 }
 
 /* Links */
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
     color: #8bbe71 !important;
 }
 
 /* Banner Img (Capa do topo) */
-.GroupBanner, .group-banner, img.banner, .GroupAvatar {
+.GroupBanner,
+.group-banner,
+img.banner,
+.GroupAvatar {
     border-radius: 5px !important;
 }
 
@@ -56,6 +99,7 @@ a, a:hover, a:visited {
     width: 12px !important;
     background-color: #222c23 !important;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #a72b4a !important;
     border-radius: 5px !important;
