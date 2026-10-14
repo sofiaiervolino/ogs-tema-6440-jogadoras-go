@@ -1,4 +1,4 @@
-﻿/* Cor do fundo e cor base do texto */
+/* Cor do fundo e cor base do texto */
 body, .App, .layout-container {
     background-color: #4f2734 !important;
     color: #d4c3a7 !important;
@@ -32,8 +32,13 @@ a, a:hover, a:visited {
 }
 
 /* Banner Img (Capa do topo) */
-.group-cover-image, .group-header img, .banner-image {
+.group-cover-image,
+    .group-header img,
+    .banner-image,
+    .banner img {
     border-radius: 5px !important;
+    overflow: hidden;
+    display: block;
 }
 
 /* Customização da Scrollbar (Barra de rolagem) */
