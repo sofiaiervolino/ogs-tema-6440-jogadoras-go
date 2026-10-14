@@ -1,4 +1,4 @@
-﻿/* Cor do fundo e cor base do texto */
+/* Cor do fundo e cor base do texto */
 body,
 .App,
 .layout-container {
@@ -46,11 +46,14 @@ a:visited {
     color: #8bbe71 !important;
 }
 
-/* Banner container */
-.banner {
+/* Banner container – ensure container and possible OGS wrappers have rounded corners */
+.banner,
+.group-header,
+.group-cover-image {
     display: block;
     border-radius: 5px !important;
     overflow: hidden !important;
+    background-clip: padding-box !important;
 }
 
 /* Image inside banner */
@@ -58,11 +61,13 @@ a:visited {
 .banner>img,
 .group-cover-image,
 .group-header img,
-.banner-image {
+.banner-image,
+.banner > img {
+
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     /* force radius on image */
     clip-path: none !important;
     /* remove any clip applied by OGS */
