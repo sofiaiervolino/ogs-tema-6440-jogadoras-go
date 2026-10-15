@@ -1,28 +1,60 @@
+/* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
+:root, [data-theme="dark"], [data-theme="light"] {
+    --bg: #4f2734 !important;
+    --fg: #d4c3a7 !important;
+    --text-color: #d4c3a7 !important;
+    --shade1: #d4c3a7 !important;
+    --shade2: #d4c3a7 !important;
+    --colored-background-fg: #d4c3a7 !important;
+}
+
 /* Cor do fundo e cor base do texto */
+html[data-theme="dark"],
+body[data-theme="dark"],
+html[data-theme="light"],
+body[data-theme="light"],
 body,
+#main-content,
 .App,
+.MainLayout,
+.GroupView,
+.Group,
+.main-container,
 .layout-container {
-    background-color: #4f2734 !important;
+    background-color: var(--bg, #4f2734) !important;
+    color: var(--fg, #d4c3a7) !important;
+}
+
+/* Forçar a cor do texto para elementos que não usam as variáveis globais */
+p, span, h1, h2, h3, h4, h5, h6, label, .title, .header {
     color: #d4c3a7 !important;
 }
 
 /* Cor do Username e Rank */
+a.Player,
+.Player-name,
 .player-name,
 .Username,
 .player-username {
     color: #d8869c !important;
 }
 
+.Player-rank,
 .player-rank,
 .Rank,
-.player-title {
+.player-title,
+.online,
+.offline,
+.provisional {
     color: #a2bc96 !important;
 }
 
 /* Botões */
 button,
 .btn,
-.Button {
+.Button,
+.btn-primary,
+.btn.primary {
     background-color: #40642e !important;
     border: 1px solid #2b5317 !important;
     color: #d4c3a7 !important;
@@ -33,7 +65,10 @@ button,
 .panel,
 .modal-content,
 .card,
-.group-panel {
+.group-panel,
+.GroupMain,
+.sidebar-panel,
+.MembersPanel {
     background-color: #222c23 !important;
     border: 1px solid #8e4c5d !important;
     border-radius: 5px !important;
@@ -46,10 +81,12 @@ a:visited {
     color: #8bbe71 !important;
 }
 
-/* Banner container – ensure container and possible OGS wrappers have rounded corners */
+/* Banner container – garante cantos arredondados e previne distorção */
 .banner,
 .group-header,
-.group-cover-image {
+.group-cover-image,
+.GroupBanner,
+.group-banner {
     display: block;
     border-radius: 5px !important;
     overflow: hidden !important;
@@ -59,12 +96,15 @@ a:visited {
     background-repeat: no-repeat !important;
 }
 
-/* Image inside banner */
+/* Imagem dentro do banner e avatar */
 .banner img,
 .banner > img,
 .group-cover-image img,
 .group-header img,
-.banner-image {
+.banner-image,
+.GroupBanner img,
+.GroupAvatar,
+img.banner {
     width: 100% !important;
     height: 100% !important;
     max-height: none !important;
