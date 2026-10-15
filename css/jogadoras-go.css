@@ -54,23 +54,25 @@ a:visited {
     border-radius: 5px !important;
     overflow: hidden !important;
     background-clip: padding-box !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 /* Image inside banner */
 .banner img,
-.banner>img,
-.group-cover-image,
+.banner > img,
+.group-cover-image img,
 .group-header img,
-.banner-image,
-.banner > img {
-
-    width: 100%;
-    height: auto;
+.banner-image {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
     display: block;
-    border-radius: 8px !important;
-    /* force radius on image */
+    border-radius: 5px !important;
     clip-path: none !important;
-    /* remove any clip applied by OGS */
 }
 
 /* Customização da Scrollbar (Barra de rolagem) */
