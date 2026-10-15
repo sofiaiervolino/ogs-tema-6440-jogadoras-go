@@ -1,5 +1,8 @@
-/* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
-:root, [data-theme="dark"], [data-theme="light"], [data-theme="accessible"] {
+﻿/* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
+:root,
+[data-theme="dark"],
+[data-theme="light"],
+[data-theme="accessible"] {
     --bg: #4f2734 !important;
     --fg: #d4c3a7 !important;
     --text-color: #d4c3a7 !important;
@@ -28,7 +31,17 @@ body,
 }
 
 /* Forçar a cor do texto para elementos que não usam as variáveis globais */
-p, span, h1, h2, h3, h4, h5, h6, label, .title, .header {
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+.title,
+.header {
     color: #d4c3a7 !important;
 }
 
@@ -75,7 +88,7 @@ button,
 .MembersPanel {
     background-color: #222c23 !important;
     border: 1px solid #8e4c5d !important;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
 }
 
 /* Links */
@@ -92,7 +105,7 @@ a:visited {
 .GroupBanner,
 .group-banner {
     display: block;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     overflow: hidden !important;
     background-clip: padding-box !important;
     background-size: cover !important;
@@ -102,7 +115,7 @@ a:visited {
 
 /* Imagem dentro do banner e avatar */
 .banner img,
-.banner > img,
+.banner>img,
 .group-cover-image img,
 .group-header img,
 .banner-image,
