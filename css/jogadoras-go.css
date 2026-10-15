@@ -1,10 +1,12 @@
 /* Variáveis Globais do OGS para forçar cores de fundo e texto em tudo */
-:root, [data-theme="dark"], [data-theme="light"] {
+:root, [data-theme="dark"], [data-theme="light"], [data-theme="accessible"] {
     --bg: #4f2734 !important;
     --fg: #d4c3a7 !important;
     --text-color: #d4c3a7 !important;
+    --card-background-color: #222c23 !important;
     --shade1: #d4c3a7 !important;
     --shade2: #d4c3a7 !important;
+    --shade3: #8e4c5d !important;
     --colored-background-fg: #d4c3a7 !important;
 }
 
@@ -61,6 +63,8 @@ button,
 }
 
 /* Cards / Boxes com as seções da página */
+.Card,
+.Group .Card,
 .well,
 .panel,
 .modal-content,
